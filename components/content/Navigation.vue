@@ -36,7 +36,7 @@ const links = [
   },
   {
     label: "© " + new Date().getFullYear().toString(),
-    class: "pointer-events-none text-xs mt-8",
+    labelClass: "pointer-events-none text-xs mt-8",
   },
   {
     label: "Instagram",
@@ -49,8 +49,7 @@ const links = [
     },
     to: "https://www.instagram.com/yuchen_o/",
     target: "_blank",
-    labelClass: "opacity-100",
-    class:
+    labelClass:
       "opacity-80 hover:opacity-100 text-xs hover:before:bg-transparent dark:hover:before:bg-transparent",
   },
 ];
