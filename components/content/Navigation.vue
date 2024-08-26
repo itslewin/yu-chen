@@ -44,11 +44,9 @@ const links = [
       src: "/logos/instagram.svg",
       ui: {
         rounded: "rounded-sm",
-        icon: {
-          base: "opacity-50 hover:opacity-100",
-        },
       },
       class: "dark:filter dark:invert",
+      imgClass: "opacity-50 hover:opacity-100",
     },
     to: "https://www.instagram.com/yuchen_o/",
     target: "_blank",
