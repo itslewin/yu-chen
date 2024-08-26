@@ -36,7 +36,7 @@ const links = [
   },
   {
     label: "© " + new Date().getFullYear().toString(),
-    labelClass: "pointer-events-none text-xs mt-8",
+    labelClass: "pointer-events-none text-xs",
   },
   {
     label: "Instagram",
@@ -44,6 +44,9 @@ const links = [
       src: "/logos/instagram.svg",
       ui: {
         rounded: "rounded-sm",
+        icon: {
+          base: "opacity-50 hover:opacity-100",
+        },
       },
       class: "dark:filter dark:invert",
     },
