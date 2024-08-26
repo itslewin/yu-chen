@@ -1,9 +1,0 @@
-@font-face {
-  font-family: "MillerBannerLight";
-  src: url("/fonts/MillerBannerLight.ttf") format("truetype");
-}
-
-html,
-body {
-  font-family: "MillerBannerLight";
-}
