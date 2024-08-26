@@ -46,7 +46,7 @@ const links = [
         rounded: "rounded-sm",
       },
       class: "dark:filter dark:invert",
-      imgClass: "opacity-50 hover:opacity-100",
+      imgClass: "opacity-50 group-hover:opacity-100",
     },
     to: "https://www.instagram.com/yuchen_o/",
     target: "_blank",
