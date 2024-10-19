@@ -1,2 +1,4 @@
 ::navigation
+:::image-gallery
+:::
 ::

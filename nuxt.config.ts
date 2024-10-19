@@ -6,6 +6,9 @@ export default defineNuxtConfig({
     "@nuxt/ui",
     "@nuxtjs/tailwindcss",
     "@nuxthq/studio",
+    "@nuxt/image",
+    "nuxt-swiper",
   ],
   css: [`assets/css/main.css`],
+  compatibilityDate: "2024-10-19",
 });
