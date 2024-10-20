@@ -1,13 +1,9 @@
 ::navigation
-  :::text-center
-  Yu Chen Hsu is a Taiwanese photographer based in Berlin, Germany.
-  
-  Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua.
-  
-  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex ea commodi consequat.
-  
-  Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-  
-  Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-  :::
+:::text-center
+Yu Chen Hsu is a Taiwanese photographer based in Berlin.
+
+With a cinematic approach, Yu’s photography is a blend of poetry and melancholy, where light and shadow reveal the subtle emotions and unspoken stories of people and places.
+
+Through thoughtful composition and a deep connection to the subject, Yu's images invite viewers into a world of contemplation, where reality meets a delicate, almost dreamlike, narrative.
+:::
 ::
