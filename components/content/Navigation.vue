@@ -11,7 +11,7 @@
   </div>
 
   <div class="lg:grid lg:grid-cols-6 gap-6">
-    <div class="hidden lg:inline-block mt-72 ml-4">
+    <div class="hidden lg:inline-block mt-12 ml-4">
       <UVerticalNavigation :links="links" :ui="ui" />
     </div>
     <div class="lg:col-span-5">
@@ -35,14 +35,22 @@ const links = [
     to: "/about",
   },
   {
-    label: "© " + new Date().getFullYear().toString(),
+    label: "Contact",
+    to: "/contact",
+  },
+  {
+    label: "© " + new Date().getFullYear().toString() + " Yu Chen Hsu",
     labelClass: "pointer-events-none text-xs",
   },
   {
-    label: "Instagram",
+    label: "",
     avatar: {
+      size: "3xs",
       src: "/logos/instagram.svg",
       ui: {
+        size: {
+          "3xs": "h-3 w-3",
+        },
         rounded: "rounded-sm",
       },
       class: "dark:filter dark:invert",
@@ -56,7 +64,7 @@ const links = [
 ];
 
 const items = [];
-items.push([links[0]]);
-items.push([links[1]]);
-items.push([links[3]]);
+for (let link in links) {
+  items.push([links[link]]);
+}
 </script>
