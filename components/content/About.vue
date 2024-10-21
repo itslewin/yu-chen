@@ -7,3 +7,9 @@
     </div>
   </div>
 </template>
+
+<script setup lang="ts">
+useHead({
+  title: "Yu Chen Hsu – About",
+});
+</script>

@@ -10,11 +10,14 @@
 </template>
 
 <script setup lang="ts">
+useHead({
+  title: "Yu Chen Hsu – Contact",
+});
+
 onMounted(() => {
   const script = document.createElement("script");
   script.src = "https://letterbird.co/embed/v1.js";
   script.setAttribute("data-letterbirduser", "yu");
-  script.body = true;
-  document.getElementById("contact-form").appendChild(script);
+  document.getElementById("contact-form")!.appendChild(script);
 });
 </script>
