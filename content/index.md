@@ -1,4 +1,4 @@
 ::navigation
-:::image-gallery
-:::
+  :::image-gallery
+  :::
 ::
