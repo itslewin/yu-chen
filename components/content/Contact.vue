@@ -6,4 +6,15 @@
       <slot />
     </div>
   </div>
+  <div id="contact-form" class="px-4 sm:px-0"></div>
 </template>
+
+<script setup lang="ts">
+onMounted(() => {
+  const script = document.createElement("script");
+  script.src = "https://letterbird.co/embed/v1.js";
+  script.setAttribute("data-letterbirduser", "yu");
+  script.body = true;
+  document.getElementById("contact-form").appendChild(script);
+});
+</script>
