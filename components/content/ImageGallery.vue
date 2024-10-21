@@ -12,7 +12,7 @@
       </SwiperSlide>
     </Swiper>
   </div>
-  <div class="block lg:hidden mb-[20px] last:mb-[40px]" v-for="slide in 9">
+  <div class="block lg:hidden mb-[20px]" v-for="slide in 9">
     <NuxtImg :src="`/photos/P${slide}.jpg`" />
   </div>
 </template>

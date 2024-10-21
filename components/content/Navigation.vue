@@ -13,17 +13,38 @@
   <div class="lg:grid lg:grid-cols-6 gap-6">
     <div class="hidden lg:inline-block mt-12 ml-4">
       <UVerticalNavigation :links="links" :ui="ui" />
+      <div class="px-2.5">
+        <div class="text-xs text-gray-500 py-1.5">
+          © {{ currentYear }} Yu Chen Hsu
+        </div>
+        <a href="https://www.instagram.com/yuchen_o/" target="_blank">
+          <UAvatar
+            src="/logos/instagram.svg"
+            size="3xs"
+            :ui="avatarUI"
+            class="py-3 cursor-pointer opacity-50 hover:opacity-100"
+          />
+        </a>
+      </div>
     </div>
     <div class="lg:col-span-5">
       <slot />
     </div>
   </div>
+
+  <ClientOnly>
+    <div class="flex items-center justify-center">
+      <Footer />
+    </div>
+  </ClientOnly>
 </template>
 
 <script setup lang="ts">
 const ui = {
   size: "text-lg",
 };
+
+const currentYear = new Date().getFullYear().toString();
 
 const links = [
   {
@@ -38,32 +59,16 @@ const links = [
     label: "Contact",
     to: "/contact",
   },
-  {
-    label: "© " + new Date().getFullYear().toString() + " Yu Chen Hsu",
-    labelClass: "pointer-events-none text-xs",
-  },
-  {
-    label: "",
-    avatar: {
-      size: "3xs",
-      src: "/logos/instagram.svg",
-      ui: {
-        size: {
-          "3xs": "h-3 w-3",
-        },
-        rounded: "rounded-sm",
-      },
-      class: "dark:filter dark:invert",
-      imgClass: "opacity-50 group-hover:opacity-100",
-    },
-    to: "https://www.instagram.com/yuchen_o/",
-    target: "_blank",
-    labelClass:
-      "opacity-80 hover:opacity-100 text-xs hover:before:bg-transparent dark:hover:before:bg-transparent",
-  },
 ];
 
-const items = [];
+const avatarUI = {
+  size: {
+    "3xs": "h-3 w-3",
+  },
+  rounded: "rounded-sm",
+};
+
+const items: any = [];
 for (let link in links) {
   items.push([links[link]]);
 }
